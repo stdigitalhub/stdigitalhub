@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ST Digital Hub 2.0</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    * { scroll-behavior: smooth; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0; padding: 0;
+      background: #f2f6fb;
+      color: #1a1a1a;
+    }
+    header {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      padding: 30px 40px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      font-weight: 700;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    section {
+      padding: 60px 40px;
+      max-width: 960px;
+      margin: auto;
+      background: white;
+      margin-top: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      animation: fadeIn 1s ease-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h2 {
+      color: #4b00b3;
+      font-size: 2em;
+      margin-bottom: 20px;
+      border-left: 6px solid #5d3eff;
+      padding-left: 15px;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    .service {
+      background: #eff0ff;
+      border-left: 5px solid #8c52ff;
+      flex: 1 1 250px;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .service h3 {
+      margin-top: 0;
+      font-weight: 600;
+      color: #4c0099;
+    }
+    .service i {
+      font-size: 30px;
+      color: #6a11cb;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .contact-info p, .contact-info a {
+      font-size: 1.1em;
+      color: #333;
+    }
+    .contact-info a {
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px 10px 0 0;
+      padding: 12px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .call-btn { background-color: #007bff; }
+    .whatsapp-btn { background-color: #25D366; }
+    .email-btn { background-color: #6c63ff; }
+    .btn:hover { opacity: 0.9; }
+    .rating {
+      margin-top: 30px;
+    }
+    .stars input { display: none; }
+    .stars label {
+      float: right;
+      font-size: 30px;
+      color: #ccc;
+      transition: color 0.3s;
+    }
+    .stars input:checked ~ label,
+    .stars label:hover,
+    .stars label:hover ~ label {
+      color: #FFD700;
+    }
+    footer {
+      background: #350060;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9em;
+    }
+    @media (max-width: 700px) {
+      .services { flex-direction: column; }
+      header h1 { font-size: 2.2em; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ST Digital Hub 2.0</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p><strong>ST Digital Hub 2.0</strong> is a future-forward digital marketing agency built to help your business grow. Our expertise spans high-performance ad campaigns, audience targeting, and ROI-focused strategies. We serve with dedication and innovation from our local base in Jhapa, Birtamode.</p>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="service">
+      <i class="fas fa-bullhorn"></i>
+      <h3>Facebook Advertising</h3>
+      <p>Smart strategies for audience engagement and lead generation through Meta platforms.</p>
+    </div>
+    <div class="service">
+      <i class="fas fa-search"></i>
+      <h3>SEO Optimization</h3>
+      <p>Boost your online presence with our expert SEO services and analytics tracking.</p>
+    </div>
+    <div class="service">
+      <i class="fas fa-lightbulb"></i>
+      <h3>Brand Consulting</h3>
+      <p>We craft digital identities that inspire trust and maximize customer impact.</p>
+    </div>
+    <div class="service">
+      <i class="fas fa-chart-line"></i>
+      <h3>Growth Analytics</h3>
+      <p>Real-time data reporting and performance optimization to ensure business growth.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-info">
+    <p><strong>Location:</strong> 01 Atithisadan Road, Birtamode, Jhapa</p>
+    <p><strong>Phone:</strong> +977 9706867581 / +977 9863983921</p>
+    <p><strong>Email:</strong> <a href="mailto:stdigitalhub338@gmail.com">stdigitalhub338@gmail.com</a></p>
+    <p><strong>Director:</strong> Tirtha Subedi</p>
+    <a class="btn call-btn" href="tel:+9779706867581">📞 Call Now</a>
+    <a class="btn whatsapp-btn" href="https://wa.me/9779706867581" target="_blank">💬 Message on WhatsApp</a>
+    <a class="btn email-btn" href="mailto:stdigitalhub338@gmail.com">✉️ Email Us</a>
+  </div>
+  <div class="rating">
+    <h3>Rate Our Services</h3>
+    <div class="stars">
+      <input type="radio" id="star5" name="rate" value="5" /><label for="star5">★</label>
+      <input type="radio" id="star4" name="rate" value="4" /><label for="star4">★</label>
+      <input type="radio" id="star3" name="rate" value="3" /><label for="star3">★</label>
+      <input type="radio" id="star2" name="rate" value="2" /><label for="star2">★</label>
+      <input type="radio" id="star1" name="rate" value="1" /><label for="star1">★</label>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 ST Digital Hub 2.0 — Powered by Results.
+</footer>
+
+</body>
+</html>
